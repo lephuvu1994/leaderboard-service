@@ -1,7 +1,8 @@
 {
     "version": 2,
     "env": {
-        "MONGO_URI": "@shop_api_mongo_uri"
+        "DATABASE_URL": "mysql://avnadmin:AVNS_PlSCPYcbpAsfDpcvCJV@leaderboard-service-vule-academy-project.h.aivencloud.com:17504/defaultdb?ssl-mode=REQUIRED",
+        "REDIS_URL" : "rediss://red-cr7ibujv2p9s73a4pang:9ODaCi3vL1YsOwmOAk6rw5HVB4sBhv1k@singapore-redis.render.com:6379"
     },
     "builds": [
         {
