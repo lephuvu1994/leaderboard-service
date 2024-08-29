@@ -5,9 +5,13 @@ import { RedisModule } from '@nestjs-modules/ioredis';
 import { Leaderboard } from './leaderboard/leaderboard.entity';
 import { LeaderboardConfig } from './leaderboard/leaderboard-config.entity';
 import { LeaderboardModule } from './leaderboard/leaderboard.module';
+import { ConfigModule } from '@nestjs/config';
 
 @Module({
   imports: [
+    ConfigModule.forRoot({
+      isGlobal: true, // Để ConfigModule có sẵn toàn bộ app
+    }),
     TypeOrmModule.forRoot({
       type: 'postgres',
       url: process.env.DATABASE_URL,
