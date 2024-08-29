@@ -9,7 +9,7 @@ import { LeaderboardModule } from './leaderboard/leaderboard.module';
 @Module({
   imports: [
     TypeOrmModule.forRoot({
-      type: 'mysql',
+      type: 'postgres',
       url: process.env.DATABASE_URL,
       entities: [Leaderboard, LeaderboardConfig],
       synchronize: true,
