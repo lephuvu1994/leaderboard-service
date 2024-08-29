@@ -10,7 +10,7 @@ import { LeaderboardModule } from './leaderboard/leaderboard.module';
   imports: [
     TypeOrmModule.forRoot({
       type: 'mysql',
-      url: 'mysql://avnadmin:AVNS_PlSCPYcbpAsfDpcvCJV@leaderboard-service-vule-academy-project.h.aivencloud.com:17504/defaultdb?ssl-mode=REQUIRED',
+      url: process.env.DATABASE_URL,
       entities: [Leaderboard, LeaderboardConfig],
       synchronize: true,
     }),
@@ -18,7 +18,7 @@ import { LeaderboardModule } from './leaderboard/leaderboard.module';
     ScheduleModule.forRoot(),
     RedisModule.forRoot({
       type: 'single',
-      url: 'rediss://red-cr7ibujv2p9s73a4pang:9ODaCi3vL1YsOwmOAk6rw5HVB4sBhv1k@singapore-redis.render.com:6379',
+      url: process.env.REDIS_URL,
     }),
     LeaderboardModule,
   ],
