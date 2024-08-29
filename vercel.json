@@ -2,7 +2,7 @@
     "version": 2,
     "env": {
         "DATABASE_URL": "postgres://default:tPerbIX5fA3k@ep-lively-glitter-a19v7ju5-pooler.ap-southeast-1.aws.neon.tech:5432/verceldb?sslmode=require",
-        "REDIS_URL" : "rediss://red-cr7ibujv2p9s73a4pang:9ODaCi3vL1YsOwmOAk6rw5HVB4sBhv1k@singapore-redis.render.com:6379"
+        "REDIS_URL" : "redis://default:gXs7XsZe7v3YZbkVM5VOlvEBJ0AdAw1e@redis-18446.c276.us-east-1-2.ec2.redns.redis-cloud.com:18446"
     },
     "builds": [
         {
